@@ -1,6 +1,6 @@
 {
-  "name": "laravel-pack",
-  "displayName": "Laravel Pack",
+  "name": "laravel-pack-109",
+  "displayName": "Laravel Pack 109",
   "description": "Recommended extensions",
   "version": "1.0.0",
   "publisher": "rizort",
@@ -13,24 +13,25 @@
     "laravel.vscode-laravel",
     "amiralizadeh9480.laravel-extra-intellisense",
     "onecentlin.laravel-blade",
-    "open-southeners.laravel-pint",
+    "open-southeners.laravel-pint"
   ],
   "contributes": {
     "configurationDefaults": {
-      // Улучшение работы с путями в Laravel
       "laravel-extra-intellisense.basePathForCode": "resources/views",
 
-      // Настройка форматирования для Blade-шаблонов
       "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter",
         "editor.formatOnSave": true
       },
 
-      // Автоматическое исправление стиля кода при сохранении через Laravel Pint
       "laravel-pint.enable": true,
       "editor.codeActionsOnSave": {
         "source.fixAll.laravel-pint": "explicit"
       }
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rizort/vscode-laravel-pack"
   }
 }
